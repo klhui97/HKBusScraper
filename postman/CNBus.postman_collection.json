@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "1ffb012d-501b-4afb-9390-bf2a61185007",
+		"name": "CityBus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/cnbus/getBusList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/cnbus/getBusList",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"cnbus",
+						"getBusList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/cnbus/getVariant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/cnbus/getVariant?id=2--Grand_Promenade",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"cnbus",
+						"getVariant"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2--Grand_Promenade"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/cnbus/geStops",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/cnbus/getStops?qInfo=0|*|CTB||930-DIP-1|*|",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"cnbus",
+						"getStops"
+					],
+					"query": [
+						{
+							"key": "qInfo",
+							"value": "0|*|CTB||930-DIP-1|*|"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/cnbus/nearby",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/cnbus/nearby?lat=22.361737908816302&lon=114.13082163791556&syscode=8203255737B6C3E0DE103575AB70287A5111C766B8",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"cnbus",
+						"nearby"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "22.361737908816302"
+						},
+						{
+							"key": "lon",
+							"value": "114.13082163791556"
+						},
+						{
+							"key": "syscode",
+							"value": "8203255737B6C3E0DE103575AB70287A5111C766B8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/cnbus/eta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/cnbus/eta?service_no=5B&stopseq=11&stopid=1064&rdv=5B-YWS-1&bound=O",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"cnbus",
+						"eta"
+					],
+					"query": [
+						{
+							"key": "service_no",
+							"value": "5B"
+						},
+						{
+							"key": "stopseq",
+							"value": "11"
+						},
+						{
+							"key": "stopid",
+							"value": "1064"
+						},
+						{
+							"key": "rdv",
+							"value": "5B-YWS-1"
+						},
+						{
+							"key": "bound",
+							"value": "O"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/api/cnbus/test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/cnbus/test",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"cnbus",
+						"test"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
